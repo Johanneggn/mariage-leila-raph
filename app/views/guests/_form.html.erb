@@ -1,0 +1,34 @@
+<div class="form-guest">
+  <p class="ecriture-form">Réponse souhaitée avant le 01.05.2022</p>
+  <%= simple_form_for @guest do |f| %>
+      <div class="contact-info">
+        <%= f.input :first_name,
+                    as: :string,
+                    label: "Prénom" %>
+        <%= f.input :last_name,
+                    as: :string,
+                    label: "Nom" %>
+                    <div class="lover-form">
+        <%= f.input :lover,
+                    :collection => [[true, 'Oui'], [false, 'Non']],
+                    :label_method => :last,
+                    :value_method => :first,
+                    as: :radio_buttons,
+                    label: "Conjoint" %>
+                    </div>
+        <%= f.input :children,
+                    as: :integer,
+                    label: "Nombre d'enfant" %>
+        <%= f.input :coming,
+                    :collection => [[true, 'Oui'], [false, 'Non']],
+                    :label_method => :last,
+                    :value_method => :first,
+                    as: :radio_buttons,
+                    label: "Présent" %>
+      </div>
+      <div class="d-flex flex-row-reverse mt-4 justify-content-center">
+        <%= f.submit "J’envoie ma réponse aux futurs mariés", class: "bouton" %>
+      </div>
+      <div class="message-flash"><%= flash[:success] %></div>
+    <% end %>
+</div>

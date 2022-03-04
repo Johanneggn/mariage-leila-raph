@@ -1,0 +1,103 @@
+.cover {
+  height: 600px;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0,0,0,.01), rgba(0,0,0,.01)), asset-url('cover.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-form {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ligne-beige {
+  height: 6rem;
+  background-color: #E8D7BF;
+}
+
+.invit {
+  width: 600px;
+}
+
+.photo-couple {
+  border: 1rem solid #A17848;
+  width: 600px;
+}
+
+.adress {
+  height: 50rem;
+  background-color: #E8D7BF;
+  padding: 3rem;
+}
+
+.places {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.places-photo {
+  width: 400px;
+}
+
+.titre {
+ font-family: "dancing script";
+ color: white;
+ font-size: 48px;
+}
+
+.form-guest {
+  border-radius: 16px;
+  background-color: #E8D7BF;
+  color: #A94B2D;
+  width: 600px;
+  padding: 2rem;
+}
+
+.ecriture-form {
+  font-family: "dancing script";
+  font-size: 28px;
+}
+
+#guest_first_name {
+  margin-bottom: 2rem;
+}
+
+.lover-form {
+  margin-bottom: 1rem;
+}
+
+#guest_last_name {
+  margin-bottom: 2rem;
+}
+
+#guest_children {
+  margin-bottom: 2rem;
+}
+.radio_buttons {
+  display: inline-flex;
+}
+
+.bouton {
+  background-color: #A94B2D;
+  border-radius: 15px;
+  text-decoration: none;
+  box-shadow: none;
+  padding: 2rem;
+  font-family: "dancing script";
+  color: white;
+  font-size: 28px;
+  box-decoration-break: none;
+  box-shadow: none;
+  border: none;
+}
