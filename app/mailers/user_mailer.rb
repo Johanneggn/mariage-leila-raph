@@ -7,6 +7,6 @@ class UserMailer < ApplicationMailer
   #
   def invitation(guest)
     @guest = guest
-    mail(to: 'johanne.gueguen@gmail.com', subject: 'Réponse invitation')
+    mail(to: 'leila.monvoisin2017@gmail.com', subject: 'Réponse invitation')
   end
 end
