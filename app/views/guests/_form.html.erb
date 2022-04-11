@@ -25,6 +25,9 @@
                     :value_method => :first,
                     as: :radio_buttons,
                     label: "Présent" %>
+        <%= f.input :comment,
+                    as: :text,
+                    label: "Avez-vous un régime alimentaire/allergie particulier.e ?" %>
       </div>
       <div class="d-flex flex-row-reverse mt-4 justify-content-center">
         <%= f.submit "J’envoie ma réponse aux futurs mariés", class: "bouton" %>
