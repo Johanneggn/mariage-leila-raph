@@ -7,8 +7,12 @@ class GuestsController < ApplicationController
     @guest = Guest.new(guest_params)
     if @guest.save
       UserMailer.invitation(@guest).deliver_now
+      UserMailer.invitation_reponse(@guest).deliver_now
       redirect_to new_guest_path, flash: {success: 'Votre message a été envoyé.'}
     end
+  end
+
+  def index
   end
 
   private

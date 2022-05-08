@@ -1,10 +1,22 @@
 <div class="cover">
-<%= image_tag "invit-leila.jpg", class: "invit" %>
+  <%= image_tag "invit-leila.jpg", class: "invit" %>
 </div>
-<div class="ligne-beige"></div>
+<div class="ligne-beige">
+  <%= link_to guests_path, class: 'lien-galerie' do %>
+      <p class="bouton">Galerie photo</p>
+  <% end %>
+</div>
 <div class="photo-form">
-<%= image_tag "photo-couple.jpg", class: "photo-couple" %>
+<%= image_tag "leila-9.jpeg", class: "photo-couple" %>
 <%= render "guests/form", guest: @guest %>
+</div>
+<div class="info-complementaire">
+  <div class="info-partie">
+    <p class="titre-info">Informations complémentaires</p>
+  </div>
+  <div class="info-partie">
+    <p class="texte-info">Vous pourrez trouver une cagnotte sur place pour la lune de miel.</p>
+  </div>
 </div>
 <div class="adress">
   <h2 class="titre">Les adresses</h2>

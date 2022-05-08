@@ -21,8 +21,12 @@
 }
 
 .ligne-beige {
-  height: 6rem;
+  height: 12rem;
   background-color: #E8D7BF;
+  padding: 2rem;
+  display: flex;
+  align-items : center;
+  justify-content: center;
 }
 
 .invit {
@@ -104,6 +108,42 @@
   border: none;
 }
 
+.lien-galerie {
+  text-decoration: none;
+}
+
+.verset {
+    font-family: "dancing script";
+    font-size : 30px;
+    margin: 6rem;
+    color: #A94B2D
+  }
+
+.info-complementaire {
+  background-color: #A94B2D;
+  padding: 2rem;
+}
+
+.info-partie {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.titre-info {
+  font-family: "dancing script";
+  font-size : 30px;
+}
+.ligne-beige-basse {
+  background-color: #E8D7BF;
+  padding: 2rem;
+  display: flex;
+  align-items : center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
 input {
   white-space: normal;
   -webkit-appearance: none;
@@ -168,6 +208,13 @@ input {
 
   .photo-couple {
     width: 300px;
+  }
+
+  .verset {
+    font-family: "dancing script";
+    font-size : 20px;
+    margin: 1rem;
+    color: #A94B2D
   }
 
   input {
